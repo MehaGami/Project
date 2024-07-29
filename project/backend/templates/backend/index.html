@@ -9,24 +9,23 @@
 </head>
 <body>
     <div class="title">    
-        <h1>Hello, world!</h1>
+        <h1>Educational Platform</h1>
         <div class="verify-container">       
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <input class="input" type="text" id="name" name="name">
             
             <label for="password">Password:</label>
-            <input type="text" id="password" name="password">
+            <input class="input" type="password" id="password" name="password">
 
-            <button onclick="validateForm()">Sign in</button>
+            <button class="button" onclick="validateForm()">Sign in</button>
         </div>
         <p id="message" class="message"></p>
         <div class="button-container">
-            <button onclick="fetchMessage()">Fetch Message</button>
-            <button onclick="removeMessage()">Remove Message</button>
+            <button class="button" onclick="fetchMessage()" >Fetch Message</button>
+            <button class="button" onclick="removeMessage()">Remove Message</button>
         </div>
-        <script src="{% static 'backend/scripts.js' %}"></script>
     </div>
+    <script src="{% static 'backend/scripts.js' %}"></script>
 
-    
 </body>
 </html>

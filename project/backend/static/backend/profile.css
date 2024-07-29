@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: radial-gradient(circle, rgb(102, 199, 221), #ffffff);
+}
+
+h1 {
+    color: #333;
+}
+
+.title {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 40px;
+    border: 1px solid black;
+    font-size: 20px;
+    height: auto;
+    border-radius: 8px;
+    background-color: rgb(233, 254, 255);
+    box-shadow: 0 0px 15px 12px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.verify-container, .profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+}
+
+.message, .profile-info {
+    margin: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    background-color: rgb(233, 254, 255);
+    padding: 10px;
+    box-shadow: 0 0px 10px 8px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(217, 252, 254);
+    border-radius: 8px;
+    border: 0.5px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(185, 240, 242);
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
